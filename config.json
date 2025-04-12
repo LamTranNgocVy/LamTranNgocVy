@@ -1,37 +1,49 @@
 {
-    "aimlock": {
-        "rank": {
-            "dpi": 1500,
-            "smoothing": 1100
-        },
-        "phong": {
-            "dpi": 1200,
-            "smoothing": 900
-        },
-        "custom": [
-            {
-                "name": "DPI 1",
-                "dpi": 800,
-                "smoothing": 600
-            },
-            {
-                "name": "DPI 2",
-                "dpi": 1000,
-                "smoothing": 800
-            }
-        ]
+  "version": "3.0",
+  "aimlock": {
+    "rank": {
+      "dpi": 1500,
+      "smoothing": 1100
     },
-    "dpiOptions": [
-        400,
-        600,
-        800,
-        1000,
-        1200,
-        1600,
-        2000
-    ],
-    "lastDPI": 1200,
-    "musicEnabled": false,
-    "musicURL": "",
-    "configURL": "https://github.com/username/repository/config.json"
+    "phong": {
+      "dpi": 1200,
+      "smoothing": 900
+    },
+    "custom1": {
+      "dpi": 1000,
+      "smoothing": 850
+    },
+    "custom2": {
+      "dpi": 800,
+      "smoothing": 700
+    },
+    "auto": {
+      "enabled": true,
+      "dpi": 800,
+      "smoothing": 700
+    }
+  },
+  "dpiOptions": [400, 600, 800, 1000, 1200, 1500, 1600, 1800, 2000],
+  "theme": "auto",
+  "autoDPI": true,
+  "music": {
+    "enabled": false,
+    "url": ""
+  },
+  "logging": true,
+  "loggingDetails": {
+    "enabled": true,
+    "logFile": "logs/game_log.txt",
+    "logActions": ["DPI Change", "Aimlock Change", "Theme Change"]
+  },
+  "adminPanel": false,
+  "lastUsed": {
+    "mode": "rank",
+    "dpi": 1500
+  },
+  "configURL": "https://raw.githubusercontent.com/LamTranNgocVy/LamTranNgocVy/main/config.json",
+  "autoUpdate": true,
+  "updateFrequency": "daily",
+  "notificationEnabled": true,
+  "errorLogging": true
 }
