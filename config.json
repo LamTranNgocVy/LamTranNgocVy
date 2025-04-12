@@ -1,0 +1,20 @@
+{
+  "settings": {
+    "aimlock": {
+      "rank": { "dpi": 1500, "smoothing": 1100 },
+      "phong": { "dpi": 1200, "smoothing": 900 },
+      "custom": {
+        "dpi": 800,
+        "smoothing": 700
+      }
+    },
+    "dpiOptions": [400, 600, 800, 1000, 1200, 1600],
+    "musicEnabled": false,
+    "musicURL": "",
+    "lastDPI": 1200,
+    "advancedSettings": {
+      "autoAdjustDPI": true,
+      "theme": "light"
+    }
+  }
+}
