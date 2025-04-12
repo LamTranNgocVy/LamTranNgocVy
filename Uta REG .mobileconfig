@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>Configuration</string>
+				<key>SeverConfiguration</key>
+				<string>https://vevrl9air2.cloudflare-gateway.com/dns-query
+com.allow_conf_seclect_NQT_ANTI_CRACK_SEVER_act_file_code_funcleancache_acp_file_auto_system="3x10007893f_on_uncrack.fzs
+com.allow_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_act_allow.file_code_clear_cache_apn_appmanager_auto_cws=“3x10007893f_on_uncrack.fzs
+com.act_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_acp_file_code_clear_rom_apn_appmanager_auto_cws=“3x10007893f_on_uncrack.fzs
+com.acp_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_acp_allow.file_code_clear_ram_ApnRevork_appmanager_auto_cws="3x10007893f_on_uncrack.fzs
+com.act_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_acp_file_code_clear_rom_apn_appmanager_auto_cws=“3x10007893f_on_uncrack.fzs
+com.allow_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_act_allow.file_code_clear_cache_apn_appdata_auto_cws=“3x10007893f_on_uncrack.so
+com.acp_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_acp_allow.file_code_clear_ram_ApnRevork_appdata_auto_cws=“3x10007893f_on_uncrack.so
+com.act_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_acp_file_code_clear_rom_apn_appdata_auto_cws=“3x10007893f_on_uncrack.so
+com.act_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_acp_file_code_clear_rom_apn_appdata_auto_cws=“3x10007893f_on_uncrack.so=true
+com.act_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_acp_file_setting_code_restar_device_app_com.dts.freefireth_auto_cws=“3x10007893f_on_uncrack.fzs
+com.acp_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_acp_file_setting_code_recovery_setting_app_com.dts.freefiremax_auto_cws=“3x10007893f_on_uncrack.fzs
+com.allow_conf_seclect_sync"100"_NQT_ANTI_CRACK_SEVER_act_allow.file_code_clear_cache_system_app_com.dts.freefireth_auto_cws=“3x10007893f_on_uncrack.fzs
+com.acp_conf_seclect_sync"100"NQT_ANTI_CRACK_SEVER_acp_file_setting_code_apn_accptExactly_app_ com.dts.freefireth_auto_cws=“3x10007893f_on_uncrack.liít
+com.acp_conf_seclect_sync_system"100"NANi_ANTI_CRACK_SEVER_acp_rick_file_feebase64_app_ com.dts.freefireth_auto_cws=“3x10007893f_on_uncrack.strings
+com.acp_conf_seclect_sync"100"NANi_ANTI_CRACK_SEVER_acp_allow.file_code_recovery_ram_Apndata_data_sytem_auto_cws=“3x10007893f_on_uncrack.so
+com.act_conf_seclect_sync"100"NANi_ANTI_CRACK_SEVER_acp_file_setting_code_restar_device_app_clean_cache_app_com.dts.freefireth_auto_cws=“3x10007893f_on_uncrack.fzs
+com.acp_conf_seclect_sync"100"NANi_ANTI_CRACK_SEVER_acp_file_setting_code_recovery_appdata_com.dts.freefiremax_auto_cws=“3x10007893f_on_uncrack.fzs
+com.acp_conf_seclect_sync"100"NANi_ANTI_CRACK_SEVER_acp_file_setting_code_apn_ApnRevorkExactly_&amp;cpss_appdata_ com.dts.freefireth_auto_cws=“3x10007893f_on_uncrack.dat
+com.allow_conf_seclect_sync_device"100"NANi_ANTI_CRACK_SEVER_act_allow.file_code_libsystem_pthread.dylib_J43NzRBRaNNoSc4W00hji_appdata_ com.dts.freefireth_auto_cws=“3x10007893f_on_uncrack.list
+com.acp_conf_seclect_sync_device"100%"_Key_act_allow.file_code_settingRestore_apn_auto_cws="3x10007893f"_on.uncrack.fzs
+com.act_conf_seclect_sync_device"100%"_Key_act_allow.file_code_ops.apnrestore_auto_cws="3x10007893f"_on.uncrack.fzs
+com.acp_conf_seclect_sync_setting"100"NANi_ANTI_CRACK_SEVER_act_allow.file_code_settingrestart.clearcacche_app_com.dts.freefireth.auto_cws="3x10007893f"_on.uncrack.so
+com.act_conf_seclect_sync_setting"100"NANi_ANTI_CRACK_SEVER_act_allow.file_code_settingcpss_app_com.dts.freefireth.auto_cws="3x10007893f"_on.uncrack.strings
+com.act_conf_seclect_sync_setting"100"Key_act_allow.file_code_ops_settingapnrestore_ auto_cws="3x10007893f"_on.uncrack.fzs
+com.acp_conf_seclect_sync_setting"100"Key_acp_allow.file_code_ips.settinghex.auto_cws="3x10007893f"_on.uncrack.so
+com.acp_conf_seclect_sync_setting"100"Key_acp_allow.file_code_settingapnrevork_accptExactly=“3x10007893f_auto_cws="3x10007893f"_on.uncrack.list
+com.acp_conf_seclect_sync_setting"100"Key_acp_allow.file_code_settingapnrevork_accptExactly=“3x10007893f_auto_cws="3x10007893f"_on.uncrack.list
+com.acp_conf_seclect_sync_setting"100"Key_acp_allow.file_code_settingDptsbase64="3x10007893f"_auto_cws="3x10007893f"_on.uncrack.list</string>
+			</dict>
+			<key>OnDemandRules</key>
+			<array>
+				<dict>
+					<key>Action</key>
+					<string>Connect</string>
+					<key>InterfaceTypeMatch</key>
+					<string>Airplane</string>
+				</dict>
+			</array>
+			<key>PayloadDisplayName</key>
+			<string>LIMITED NGUYỄN THẮNG</string>
+			<key>PayloadIdentifier</key>
+			<string>com.restore.settings.fzs/Configuration</string>
+			<key>PayloadOrganization</key>
+			<string>NGUYỄN THẮNG</string>
+			<key>PayloadType</key>
+			<string>Configuration</string>
+			<key>PayloadUUID</key>
+			<string>000000</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>Configuration</string>
+				<key>SeverConfiguration</key>
+				<data>
+                vV)D2l5ujQXNDmAA2LLr3PbAziitIkc1nyrg]lqwfTw3AIzLLiM6NNksFdvnvmzmWNw977FFD4WLMnTHuqieVgTRlk68WvyEMGGBRH)kW644ZdPN5qoYclyfQGEzu]kX7t3hE7dr4qyc898MCvmxTcjokVDT]22la)6f7deFRR1luXNDy2b0i5E2Cd6]U6wV4HCEBgBQry5uwIHu2cPb5WBQkT2yqXBLCaB8KbvL1iVS38o)AvPLkhj7Z38ESfDrJonAzkWWTpneDUId4AudH0kcYIfPHt4hUfL)Z0vhH)5]kEi1pSOVxbJqRO]GLDUKeHy6LZ82UJArog1fuqJCFisNpJEeDs5gJNkaZjYS66Sy]LLkQArpkIMj4ISxbAeysLLxakEelglvLHnZdU0s8OJs7Llpr9JEwYOVoOEb0WnPaByEDx7yIX8HrH43k)7xSaSNT4FBGN796VVeHp39mIcKvPjpdEQ1FQ4uZ2fzVIABL5iiiNn5fX]4p)vmwKKV0AqVqsK5FRYFbMx56pL)Ygrs)]1Tc8HwJt]xSE]oSkx]JpRNPWnd7sI3mlSfSbxyN]DE2qb0Xi]4F7UzEc05x5KbLhNQYlcQutlPkHwgpXvIhm94fuir6rABAk2aeM2bAcLbgvWG9TE]s3UqedQ)30Xau5OEJMBnGnpmd7cjdrXnruh0L]VexC3vCN)yvtobaFYqM76NBmG]WINBLX5)0)gmN2s50ZOe2ZpjcF99nzV8clNIlLChAid6LxRSwjD2MXa5OW2KiQufpVVXRi7jGMK0Vxyfuc88ZZz7CkpWXNGSlCIzy432ORWoVz2AxKmDAafBIyBtSAMGsEHw1pb2ZbamSHjaYrKRMQzmiYx9nimiWeqZ35Cu2cXv7BxXSECPX6R1XzwZzCl)k9pan1JoXNQBK3Ox05mGYC5Vye5eA1edb3w15RWr2LACXIXvegJZCBXt0tLtnxwOHPvWzibYKHZVSr9SBg1ybSGItrasie44bOluWzyRFlFkr3BFUdFPuJwcNyh3hCpGOUPZg59X15Yqjcw1tVAI8SpAHfeZIQp10j3TiI)ypEYVcLoXCd9Ev5yBQbf8l)K)PN4Wiha1hRgsoc2VppM2G1Lt485Ft1AmhmgdpXVFzcgldo88E1Ow5WDGKxKjIYWfbiE0CqOTxu]f3mceY15K)0y)0Q4SYpDq)CuolEcIH2Sb18ad]DKzQjMD8)EoJQyOSXqfkytXObokiqsHN233G26Dti7uYsM15q3W6rjWwDhqe1ZScb9vDN0k3anDthxQ3fX9skAABVKzKt)RggqNya4aw46lE]EjqT2X9SCQvEZ78CGcMU7rVdu1VamQxDlEQTfnLZLdyrSLlcrnZpDevqfCfIDpMGblqEjEYd3d9Mg8uCft8PZCuEqtQ4C85NltDZgKK8LNlqI2CpXlPFPpbMJglj8Opx61ptCitKOEFmB3sQAeJlIoERVhJMLMheCqQhQvy3Aikhy5wJS8upKLz3kAug5N9FFNX3kCUunFo1CrO1kbMAd0My]rpd7OCtw]W00o)9]B9YrkihWO)M0anF98jmmva9RwpjPR4akuOJJ3QqEDfNs6nqMk)U)R2neDgczHp4q80CrV3hs9B5b4XSvsAf0NvIKDs9uhT]qiMHvNtBKnVetJ07ownMm2s4U3goTdvN58Lwi7P5PCYCGCqYTxqcMSCaos)dJHye21tzcKlpYvCUMkaoANIKmTmzhlxaGPQ85q8tCmzekqrPvNEtG9ROJxeLqDT2GDscw)vM7GX8ma6VUvWQ9MPXFTVgDt]ySCcyQlU6EawH8VpkCppiKzq53rYeOEoKRaN9u)EIsM3C2VvM9EA1fnLWTbOoiof0laqGVZVjOPSiBnW0AxagiwSCyCWSSgXCA01OjnIEKTLzViusWZnKAfiFQy2nfcmK6LcXGG)mXeM34AeyCi41yXl6AR6xeYoktta140)ty5ZdFAQp4YM90)V97rCRiV3IcV3))fP]yJZXmEjnbHpJVNchiEZav42Gq6rJeU1KUSBOIIAzbkB95xNXkCdYDkRJAgNhm]NC]bb7AzHYo1y0LcQ6utcnOrdd1ebqVl0NLZMXl8NAG7mh6X5162wxaQ6QA1mFhA)iKWiFFbzrOgw5Hzwr7zdU6HbUZhx37ta39nqcY9E1wTeAhn4rwcg4Dl7toCsg76LUflWQSCBsvPG]hwZIBeOXS0DftiuvnW35KW4]ZR7wKYAi20]lwqHG8BZ2Z5CmvOGAJYHOfGWCj]XReQBKx4hMdU8vpbyLBpLTyadYcHjk2wj7LnoAhuZnkgD7Rwr]4lpqcH8A]ZkISHosSaBO21BcsV4h7m5uRnuZM7qeeUeBa3wJsbQ]twVcLV1]JFF9QJyNpYP]HA28qmKVt)1Ouai8caCEQy943nGJUqJ7FA7qOsOqm62VKPOmls5Z)wQI2ttLgomF6jFGQK16Hw)FJvAyP0CHkmkp)woTmsDyYUQVOKSMbw5LvYp8I]CeeTkPTTd9TFaDDOdKUwtKBJFUc4p5dd4WpWyVQtVhlnNGCMZqkRbkTApKFk2Rmt3mVa]8cAfDGlBZrjaeIc6dNCijmE)nwxvtGliG]zxkQCZsLr28bZW1YYQTbTBVhPl9uZpLqUTLgg8dSFcvlc9hUEui6QpwcaViMtTuAkUtOMY0iUdoc1jxWEqDvi)oPzdQTX]zNz9])vROf4ICj7WOuZEqtV7J0vgdMUldKtS8tHF8M0NJnC5atkILsDPw1Utwl3WfxLYK]AAi1TDUU5mop5df5OinicnERzmvEEjFSx)3uV5oZ57nJlcKrogyaHAcK3MHEnFdZ]Vb2Cbthx]tcNTAnDOSJH]8T20RnFb9ZOMyyHd8OgoRuI95MqlYndfCa8yMLKABpAtthuL8vpDCBFJkoPwTFntJKfViw4vT4n5t7AIBrLT1]]9OYy8eOTJCFIxBexwxzevAWbfKsE3TR08A5JMs5W)ffuuCmp2MheAP0hlnNdBunc9stjH)VMNRpb)]Ld2EOnQwaX8Oi9NnZnG]gykfF7f)6agGKoOhb9GTuU]TNuRY36yb]k2B1Kd)ST8NYHXyywZPtHgNFFyD2V15BN4DMDv7CHub1rMkpUBSx9bL73w1vlHKhaJACZnVwHRWRpjJkOQ]JY]oy2aNkU75v6MW]1LcpNJFsyYjwA]y)9P3aTAN9Ms97ifDX4BWoxwycJzJfBaBJ7co5zxxKrxk)J1lH0H50onFzxTAXZRK8])K]AVWUtBm6Wcke7vXqKhXMnHH0yhuzw)VZmUjaTM]HQjberJmZjgFaO2xCDCQiEiWj9F6jC9BnRV0a8G2QdSH1SbgppChDMHTuL9wg]3YCRkAPD5QF3)4OoPsLsPxru3bwaYuhOD5LlJs3wg4YbJO3vx353hLyxhSX60DmKFk4)rRafJfi2LcLZ7LCHi)eKDG3uz8GOIjSa4lLNDetQ]9RKHlhIEBhseRUqUlMbxEsC]0Phr)MBb0zfwiFW4KvnKpEd92NX67evCmGDykXArmA7z1ywe0hwrrQ1KZ8FlB]Yejr]3dj1bShGMVkZRcQq0WU0f3TfEQGWEyJOw09eqtqdVso5vyh8AaP96ivGjkmmS9)P6v94OZ34H4K5y7NVrSmzhrAiO0jZ1BQk1)X1MuzxvNI)rQ6Jn]k71YIkD479QcwO)WXzNRzz7vcW5uzyb0usZoOLANPSl]Nq22wlmhvOrQWQEpdhlMKvPvOhucfTeTtOtrjRwgyQF69DrD7Vx91)KQmkSgnDXsrQg)Qd37)9oHrzQH4aCMkNXgDrGT)CBRzdD5Ill3w2pzwX)z]IV)2LNJQDjE6R3LNiPw3wZs1SYTFYsGwy0ykiYZP)GvURHgk)qDfy1hFU3IxchUcTHHBJ1n0vvopTj89uQgsrLjerMjXGxplxwiHdH]gEmPkkbBl8GsW1gRMlnfBYWh1T8)kPKS6H6QZNK7Rqjh6Pfyhm4JTFRkCpDkOwr01fidYeN0E8juhWz7eJ06WhLk5Xs5fmj2pMruMCGCzDAY90ry5giau8U5u)VU6i7ZJz4I8z9JgpmY956DrT6GPkv)v4PdZX3cgSceiub8ee]4rq2w2iQap)kdO9L6zhcCPsS172y9Z5X373RSryCnra084v2dA]c7jN1V1JICTivu4d6aW07tCnne3xlEJdiXFSr8uEZjXva32POMXEyLOh1amMgScnZLQA1ddArmpOCSb6wJTqLojJSbXOlomFRSJG4Ksr0H9sNCA304u3o229w8fM2s3EQYo]gBoqUtbyYGMJ5ZihRWpTGghyeLm2IH0oYubHkRzjxXhsykidH27cS)kh14UslPsRNV]ud68wNKSZJc6)a36BCd8YY9t4Tkq7GM0aRRzMor6qicP4jBKAwE68)MoRSuUlNW1peXMoxQs4eFrjXl)unYHU37K882gXupgJ7bGC1jZipBuagx)r2W6ZngqQKRa3njWr17d63x7SfofbbAoUg19]LUohCgGFcxUEiBIfof7eEY]Vrv)IcInoYD0qKI9jkvpP7]mcCKx6YnQWp6CplC8Qkv8MCgG0QQ7scUNJYWmDzIGrzH2GnKNvuzCKQKlz3oy]g]fO)Msudz2ihhk3zIyQ6lkHpvy1qAxyQPABa1zG4jwcqbgaMpVapWUheVYf5VnfAPkNW6qM9ajYF]Vzm1QzOypzciLbp0QpRF8DpoOhBEmYTDuA36LIH4mXdtVlFEM11ThkATnwAI0gOk6Ltg!
+	           </data>
+			</dict>
+			<key>OnDemandRules</key>
+			<array>
+				<dict>
+					<key>Action</key>
+					<string>Connect</string>
+					<key>InterfaceTypeMatch</key>
+					<string>WiFi</string>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<string>Connect</string>
+					<key>InterfaceTypeMatch</key>
+					<string>Cellular</string>
+				</dict>
+			</array>
+			<key>PayloadDisplayName</key>
+			<string>RegAim95%</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.configuration.list/NGUYENTHANG_ANTI_CRACK_SEVER</string>
+			<key>PayloadOrganization</key>
+			<string>NGUYENTHANGDZ</string>
+			<key>PayloadType</key>
+			<string>com.apple.configuration.list</string>
+			<key>PayloadUUID</key>
+			<string>111111</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>NGUYENTHANGDNS</string>
+	<key>PayloadDisplayName</key>
+	<string>DNS LIMITED UNCRACK</string>
+	<key>PayloadIdentifier</key>
+	<string>com.nqt.apple-configuration</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>fafd46f6-4af6-4ee2-b538-eceb5b7cf1a1</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
