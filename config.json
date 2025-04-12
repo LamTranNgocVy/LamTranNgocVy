@@ -1,20 +1,37 @@
 {
-  "settings": {
     "aimlock": {
-      "rank": { "dpi": 1500, "smoothing": 1100 },
-      "phong": { "dpi": 1200, "smoothing": 900 },
-      "custom": {
-        "dpi": 800,
-        "smoothing": 700
-      }
+        "rank": {
+            "dpi": 1500,
+            "smoothing": 1100
+        },
+        "phong": {
+            "dpi": 1200,
+            "smoothing": 900
+        },
+        "custom": [
+            {
+                "name": "DPI 1",
+                "dpi": 800,
+                "smoothing": 600
+            },
+            {
+                "name": "DPI 2",
+                "dpi": 1000,
+                "smoothing": 800
+            }
+        ]
     },
-    "dpiOptions": [400, 600, 800, 1000, 1200, 1600],
+    "dpiOptions": [
+        400,
+        600,
+        800,
+        1000,
+        1200,
+        1600,
+        2000
+    ],
+    "lastDPI": 1200,
     "musicEnabled": false,
     "musicURL": "",
-    "lastDPI": 1200,
-    "advancedSettings": {
-      "autoAdjustDPI": true,
-      "theme": "light"
-    }
-  }
+    "configURL": "https://github.com/username/repository/config.json"
 }
