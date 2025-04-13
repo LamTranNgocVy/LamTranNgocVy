@@ -1,0 +1,138 @@
+{
+    "aimlock": {
+        "dpi": 3000,
+        "smoothing": 1500,
+        "vipMode": true,
+        "headshotPriority": true,
+        "autoDPIAdjust": true,
+        "adjustmentMode": true,
+        "dynamicTargeting": true,
+        "targetingSensitivity": 0.95,
+        "targetingSpeed": 0.85,
+        "headshotDetection": {
+            "enabled": true,
+            "headAreaWeight": 1.25,
+            "neckAreaWeight": 1.0,
+            "precisionThreshold": 0.8,
+            "dynamicHeadshotBoost": true,
+            "predictiveTracking": true,
+            "adaptiveHeadshotSensitivity": true,
+            "targetDetectionRange": 15,
+            "headshotCriticalBoost": true
+        },
+        "advancedTracking": {
+            "targetingMode": "headOnly",
+            "accuracyBoost": true,
+            "reactionTimeCompensation": true,
+            "adaptiveDPI": {
+                "enabled": true,
+                "minDPI": 1000,
+                "maxDPI": 3500
+            },
+            "smoothnessAdjustment": {
+                "enabled": true,
+                "intensity": 0.7
+            },
+            "multiTargetDetection": {
+                "enabled": true,
+                "maxTargets": 5,
+                "targetSwitchThreshold": 0.6,
+                "targetSwitchSpeed": 0.4
+            },
+            "environmentalAdaptation": {
+                "enabled": true,
+                "adjustDPIBasedOnEnvironment": true,
+                "dynamicAimAdjustment": true,
+                "fpsAdaptiveDPI": true
+            }
+        },
+        "aiLearning": {
+            "enabled": true,
+            "learningRate": 0.05,
+            "learningMode": "headshotOptimization",
+            "patternRecognition": true,
+            "targetBehaviorAnalysis": true,
+            "autoAdjustments": {
+                "enabled": true,
+                "targetRecognition": "head"
+            },
+            "environmentalLearning": {
+                "enabled": true,
+                "learnFromTargetMovement": true,
+                "dynamicSkillUpgrade": true,
+                "adaptiveHeadshotSensitivity": true
+            }
+        },
+        "predictiveAim": {
+            "enabled": true,
+            "predictMovement": true,
+            "aimCompensationSpeed": 0.6,
+            "dynamicLeadCompensation": true,
+            "accuracyAdjustmentOnLead": true,
+            "headshotBiasCompensation": true
+        },
+        "antiCheatProtection": {
+            "enabled": true,
+            "aimbotDetection": true,
+            "recoilModificationProtection": true,
+            "multiThreadProtection": true,
+            "realTimeMonitoring": true,
+            "rootDetection": true,
+            "antiDebugger": true,
+            "cheatDetectionInterval": 1,
+            "suspiciousActivityAlert": true
+        }
+    },
+    "features": {
+        "autoSmoothing": true,
+        "panicMode": true,
+        "logSession": true,
+        "secureConfigFile": true,
+        "realTimeStats": {
+            "enabled": true,
+            "cpuUsageMonitoring": true,
+            "fpsMonitoring": true,
+            "networkSpeedMonitor": true,
+            "targetSwitchStats": true
+        },
+        "cloudSync": {
+            "enabled": true,
+            "autoBackup": true
+        },
+        "hapticFeedback": {
+            "enabled": true,
+            "intensity": 100
+        },
+        "timeOfFlightDetection": {
+            "enabled": true,
+            "detectionRange": 25
+        },
+        "autoDPIAdjust": {
+            "enabled": true,
+            "environmentalDPIAdjustment": true
+        }
+    },
+    "security": {
+        "configFileEncryption": "AES256",
+        "antiModifying": true,
+        "antiCheat": true,
+        "rootDetection": true,
+        "antiDebugger": true,
+        "realTimeProtection": {
+            "enabled": true,
+            "checkInterval": 3,
+            "alertOnSuspiciousActivity": true
+        },
+        "integrityCheck": {
+            "enabled": true,
+            "checksumValidation": true,
+            "onModificationAlert": true
+        }
+    },
+    "autoUpdate": {
+        "enabled": true,
+        "versionControl": true,
+        "changelog": true,
+        "manualOverride": false
+    }
+}
