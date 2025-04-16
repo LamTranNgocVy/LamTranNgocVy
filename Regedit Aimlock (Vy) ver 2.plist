@@ -1,0 +1,300 @@
+import UIKit
+import CoreMotion
+import GameController
+import AVFoundation
+import LocalAuthentication
+import PencilKit
+
+class InputManager {
+    static let shared = InputManager()
+
+    private let motionManager = CMMotionManager()
+    private let feedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
+
+    private init() {}
+
+    // MARK: - 🖥 Quản lý thiết bị đầu vào
+    func isExternalKeyboardConnected() -> Bool {
+        return UIPasteboard.general.hasStrings
+    }
+
+    func isGameControllerConnected() -> Bool {
+        return GCController.controllers().count > 0
+    }
+
+    func getConnectedGameControllers() -> [GCController] {
+        return GCController.controllers()
+    }
+
+    // MARK: - 🎮 Hỗ trợ tay cầm chơi game
+    func listenForGameControllerInputs() {
+        for controller in GCController.controllers() {
+            controller.microGamepad?.buttonA.pressedChangedHandler = { _, _, isPressed in
+                print("A button pressed: \(isPressed)")
+            }
+        }
+    }
+
+    // MARK: - 🎨 Hỗ trợ Apple Pencil
+    func handleApplePencilInput(_ touches: Set<UITouch>) {
+        for touch in touches {
+            if touch.type == .pencil {
+                print("Apple Pencil: \(touch.force) - \(touch.altitudeAngle)")
+            }
+        }
+    }
+
+    // MARK: - 📡 Cảm biến (Gia tốc kế, Con quay hồi chuyển)
+    func startGyroscopeUpdates() {
+        guard motionManager.isGyroAvailable else { return }
+        motionManager.gyroUpdateInterval = 0.1
+        motionManager.startGyroUpdates(to: OperationQueue.main) { (data, error) in
+            if let rotation = data?.rotationRate {
+                print("Gyroscope: x=\(rotation.x), y=\(rotation.y), z=\(rotation.z)")
+            }
+        }
+    }
+
+    func startAccelerometerUpdates() {
+        guard motionManager.isAccelerometerAvailable else { return }
+        motionManager.accelerometerUpdateInterval = 0.1
+        motionManager.startAccelerometerUpdates(to: OperationQueue.main) { (data, error) in
+            if let acceleration = data?.acceleration {
+                print("Accelerometer: x=\(acceleration.x), y=\(acceleration.y), z=\(acceleration.z)")
+            }
+        }
+    }
+
+    // MARK: - 🔄 Xử lý đa điểm & nhận diện cử chỉ
+    func handleMultiTouch(_ touches: Set<UITouch>) {
+        for touch in touches {
+            print("Touch at \(touch.location(in: touch.view))")
+        }
+    }
+
+    func setupGestureRecognizers(for view: UIView) {
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture))
+        swipeGesture.direction = .right
+        view.addGestureRecognizer(swipeGesture)
+    }
+
+    @objc private func handleSwipeGesture(gesture: UISwipeGestureRecognizer) {
+        print("Swipe gesture detected!")
+    }
+
+    // MARK: - 🎛 Phản hồi rung & haptic feedback
+    func triggerHapticFeedback() {
+        feedbackGenerator.impactOccurred()
+    }
+    // MARK: - ☀️ Điều khiển độ sáng màn hình
+    func setScreenBrightness(level: CGFloat) {
+        UIScreen.main.brightness = max(0, min(level, 1))
+    }
+
+    // MARK: - 🔋 Quản lý trạng thái pin thiết bị đầu vào
+    func getBatteryLevel() -> Float {
+        UIDevice.current.isBatteryMonitoringEnabled = true
+        return UIDevice.current.batteryLevel
+    }
+
+    // MARK: - 🔑 Nhận diện khuôn mặt với Face ID
+    func authenticateWithFaceID(completion: @escaping (Bool, Error?) -> Void) {
+        let context = LAContext()
+        var error: NSError?
+
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Unlock using Face ID") { success, authenticationError in
+                DispatchQueue.main.async {
+                    completion(success, authenticationError)
+                }
+            }
+        } else {
+            completion(false, error)
+        }
+    }
+}
+import UIKit
+
+class InputManager {
+    
+    // MARK: - 🔹 Hằng số
+    struct Constants {
+        static let ACTION_QUERY_KEYBOARD_LAYOUTS = "com.apple.input.action.QUERY_KEYBOARD_LAYOUTS"
+        static let META_DATA_KEYBOARD_LAYOUTS = "com.apple.input.metadata.KEYBOARD_LAYOUTS"
+        
+        static let MIN_POINTER_SPEED = -7
+        static let MAX_POINTER_SPEED = 7
+        static let DEFAULT_POINTER_SPEED = 0
+        
+        static let DEFAULT_MAXIMUM_OBSCURING_OPACITY_FOR_TOUCH: Float = 0.8
+        
+        static let BLOCK_UNTRUSTED_TOUCHES: Int64 = 158002302
+        
+        static let INJECT_INPUT_EVENT_MODE_ASYNC = 0
+        static let INJECT_INPUT_EVENT_MODE_WAIT_FOR_RESULT = 1
+        static let INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH = 2
+        
+        static let SWITCH_STATE_UNKNOWN = -1
+        static let SWITCH_STATE_OFF = 0
+        static let SWITCH_STATE_ON = 1
+    }
+    
+    // MARK: - ⌨️ Quản lý bố cục bàn phím ngoài
+    func getAvailableKeyboardLayouts() -> [String] {
+        return ["QWERTY", "AZERTY", "Dvorak", "Colemak"]
+    }
+    
+    func getCurrentKeyboardLayout() -> String? {
+        return UserDefaults.standard.string(forKey: "CurrentKeyboardLayout")
+    }
+    
+    func setKeyboardLayout(_ layout: String) {
+        UserDefaults.standard.set(layout, forKey: "CurrentKeyboardLayout")
+        print("Keyboard layout set to \(layout)")
+    }
+    
+    // MARK: - 🖱 Điều chỉnh tốc độ con trỏ
+    func setPointerSpeed(_ speed: Int) {
+        let clampedSpeed = max(Constants.MIN_POINTER_SPEED, min(Constants.MAX_POINTER_SPEED, speed))
+        UserDefaults.standard.set(clampedSpeed, forKey: "PointerSpeed")
+        print("Pointer speed set to \(clampedSpeed)")
+    }
+    
+    func getPointerSpeed() -> Int {
+        return UserDefaults.standard.integer(forKey: "PointerSpeed")
+    }
+    
+    // MARK: - 🚫 Chặn cảm ứng không tin cậy
+    func isTouchTrusted(_ touch: UITouch) -> Bool {
+        guard let window = touch.view?.window else { return false }
+        return !window.isHidden
+    }
+    
+    // MARK: - 🏳️ Kiểm tra độ che phủ của màn hình
+    func isViewObscuringTouches(_ view: UIView) -> Bool {
+        return view.alpha < CGFloat(Constants.DEFAULT_MAXIMUM_OBSCURING_OPACITY_FOR_TOUCH)
+    }
+    
+    // MARK: - 🖲 Mô phỏng chế độ xử lý sự kiện cảm ứng
+    enum InputInjectionMode {
+        case async
+        case waitForResult
+        case waitForFinish
+    }
+    
+    func injectInputEvent(mode: InputInjectionMode) {
+        switch mode {
+        case .async:
+            print("Injecting input asynchronously")
+        case .waitForResult:
+            print("Injecting input and waiting for result")
+        case .waitForFinish:
+            print("Injecting input and waiting for processing to finish")
+        }
+    }
+}
+// MARK: - 🖲 Mô phỏng chế độ xử lý sự kiện cảm ứng
+enum InputInjectionMode {
+    case async
+    case waitForResult
+    case waitForFinish
+}
+
+func injectInputEvent(mode: InputInjectionMode) {
+    switch mode {
+    case .async:
+        print("Injecting input asynchronously")
+    case .waitForResult:
+        print("Injecting input and waiting for result")
+    case .waitForFinish:
+        print("Injecting input and waiting for processing to finish")
+    }
+}
+// MARK: - ⌨️ Quản lý bố cục bàn phím ngoài
+func getAvailableKeyboardLayouts() -> [String] {
+    let layouts = ["QWERTY", "AZERTY", "Dvorak", "Colemak"]
+    return layouts
+}
+
+func getCurrentKeyboardLayout() -> String? {
+    return UserDefaults.standard.string(forKey: "CurrentKeyboardLayout")
+}
+
+func setKeyboardLayout(_ layout: String) {
+    UserDefaults.standard.set(layout, forKey: "CurrentKeyboardLayout")
+    print("Keyboard layout set to \(layout)")
+}
+// iOS Key Codes Reference: https://developer.apple.com/documentation/uikit/uikeycommand/input_strings
+// W3C UI Events Code Values: https://www.w3.org/TR/uievents-code/
+// Apple Game Controller Framework: https://developer.apple.com/documentation/gamecontroller/gckeyboard
+
+class InputManager {
+    static let shared = InputManager()
+    
+    private var currentKeyboard: GCKeyboard?
+
+    private init() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardDidConnect),
+            name: .GCKeyboardDidConnect,
+            object: nil
+        )
+    }
+
+    @objc private func keyboardDidConnect(notification: Notification) {
+        if let keyboard = notification.object as? GCKeyboard {
+            self.currentKeyboard = keyboard
+            print("🔌 Bàn phím kết nối: \(keyboard)")
+        }
+    }
+
+    @objc public func getKeyboardLayoutDescriptors() -> [String] {
+        let layouts = UITextInputMode.activeInputModes.compactMap { $0.primaryLanguage }
+        return layouts
+    }
+
+    @objc public func getKeyboardLayoutsForInputDevice() -> [String] {
+        return getKeyboardLayoutDescriptors()
+    }
+
+    @objc public func getCurrentKeyboardLayoutForInputDevice() -> String? {
+        return UITextInputMode.current?.primaryLanguage
+    }
+
+    @objc public func getKeyboardLayout(_ keyboardLayoutDescriptor: String) -> String? {
+        let layouts = getKeyboardLayoutDescriptors()
+        return layouts.contains(keyboardLayoutDescriptor) ? keyboardLayoutDescriptor : nil
+    }
+
+    @objc public func setCurrentKeyboardLayoutForInputDevice(_ keyboardLayoutDescriptor: String) {
+        print("⚠️ iOS không cho phép đổi layout bàn phím ngoài qua code. Bạn phải đổi trong Settings.")
+    }
+
+    @objc public func listenForKeyboardInput() {
+        GCKeyboard.coalesced?.keyboardInput?.keyChangedHandler = { keyboard, key, keyDown in
+            if keyDown {
+                print("⌨️ Phím bấm: \(key.code.rawValue)")
+            }
+        }
+    }
+}
+@objc public func getEnabledKeyboardLayoutsForInputDevice() -> [String] {
+    return getKeyboardLayoutDescriptors()
+}
+
+@objc public func getCurrentKeyboardLayoutForInputDevice() -> String? {
+    return UITextInputMode.current?.primaryLanguage
+}
+
+@objc public func addKeyboardLayoutForInputDevice(_ keyboardLayoutDescriptor: String) {
+    print("⚠️ iOS không cho phép thêm layout bàn phím qua code. Hãy thêm trong Settings.")
+}
+
+@objc public func removeKeyboardLayoutForInputDevice(_ keyboardLayoutDescriptor: String) {
+    print("⚠️ iOS không cho phép xóa layout bàn phím qua code. Hãy xóa trong Settings.")
+}
+
+@objc public func setCurrentKeyboardLayoutForInputDevice(_ keyboardLayoutDescriptor: String) {
+    print("⚠️ iOS không cho phép đổi layout bàn phím qua code. Hãy đổi trong Settings.")
+}
