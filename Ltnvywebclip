@@ -1,0 +1,90 @@
+{
+    "config": {
+        "name": "LTNVy WebClip",
+        "version": "1.0",
+        "description": "Menu WebClip LTNVy với các tính năng như Aimbot, Aimlock, Auto DPI, Smotting và Antiban Check, được thiết kế với màu sắc nổi bật.",
+        "icon": "https://your-icon-url.com/icon.png",
+        "backgroundColor": "#FF6F61",  // Màu cam đỏ nổi bật
+        "textColor": "#FFFFFF"  // Màu chữ trắng
+    },
+    "menu": [
+        {
+            "name": "Aimbot",
+            "action": "openAimbot",
+            "icon": "A",
+            "description": "Cài đặt Aimbot",
+            "backgroundColor": "#FF5733",  // Cam sáng
+            "textColor": "#FFFFFF",  // Trắng
+            "hoverBackgroundColor": "#FF2D00",  // Cam đậm
+            "hoverTextColor": "#FFF"
+        },
+        {
+            "name": "Aimlock",
+            "action": "openAimlock",
+            "icon": "L",
+            "description": "Cài đặt Aimlock",
+            "backgroundColor": "#FF8C00",  // Cam vàng sáng
+            "textColor": "#FFF",
+            "hoverBackgroundColor": "#D67400",  // Cam nâu
+            "hoverTextColor": "#FFF"
+        },
+        {
+            "name": "Auto DPI",
+            "action": "openAutoDpi",
+            "icon": "D",
+            "description": "Cài đặt Auto DPI",
+            "backgroundColor": "#FFC300",  // Vàng sáng
+            "textColor": "#FFF",
+            "hoverBackgroundColor": "#FFB800",  // Vàng cam
+            "hoverTextColor": "#FFF"
+        },
+        {
+            "name": "Smotting",
+            "action": "openSmotting",
+            "icon": "S",
+            "description": "Kích hoạt Smotting",
+            "backgroundColor": "#FF5A36",  // Cam đỏ đậm
+            "textColor": "#FFF",
+            "hoverBackgroundColor": "#FF2A00",  // Đỏ cam đậm
+            "hoverTextColor": "#FFF"
+        },
+        {
+            "name": "Antiban Check",
+            "action": "openAntibanCheck",
+            "icon": "C",
+            "description": "Kiểm tra Antiban",
+            "backgroundColor": "#FF2A68",  // Hồng đỏ
+            "textColor": "#FFF",
+            "hoverBackgroundColor": "#D92456",  // Đỏ hồng đậm
+            "hoverTextColor": "#FFF"
+        }
+    ],
+    "footer": {
+        "text": "Ủng hộ ad LTNVy: ",
+        "link": "https://www.facebook.com/share/14EvmkvTiZM/?mibextid=wwXIfr",
+        "backgroundColor": "#FF6F61",  // Nền cam đỏ cho footer
+        "textColor": "#FFF"
+    },
+    "actions": {
+        "openAimbot": {
+            "description": "Cài đặt và điều chỉnh Aimbot.",
+            "command": "alert('Cài đặt Aimbot...')"
+        },
+        "openAimlock": {
+            "description": "Cài đặt và điều chỉnh Aimlock.",
+            "command": "alert('Cài đặt Aimlock...')"
+        },
+        "openAutoDpi": {
+            "description": "Cài đặt Auto DPI.",
+            "command": "alert('Cài đặt Auto DPI...')"
+        },
+        "openSmotting": {
+            "description": "Kích hoạt Smotting.",
+            "command": "alert('Kích hoạt Smotting...')"
+        },
+        "openAntibanCheck": {
+            "description": "Kiểm tra tình trạng Antiban.",
+            "command": "alert('Kiểm tra Antiban...')"
+        }
+    }
+}
